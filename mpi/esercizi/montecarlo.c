@@ -37,9 +37,9 @@ int main(int argc, char const *argv[]){
     MPI_Init(NULL, NULL);
     MPI_Comm_size(MPI_COMM_WORLD, &comm_sz);
     MPI_Comm_rank(MPI_COMM_WORLD, &my_rank);
+
     // 1. Get the input on process 0
     Get_input(my_rank, comm_sz, &tosses_n);
-
     local_tosses = tosses_n / comm_sz;
 
     // 2. Make each process generate random couples (x,y) 

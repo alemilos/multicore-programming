@@ -1,0 +1,7 @@
+{
+  "files.associations": {
+    "mpi.h": "c",
+    "vector": "c",
+    "utils_serial.h": "c"
+  }
+}
